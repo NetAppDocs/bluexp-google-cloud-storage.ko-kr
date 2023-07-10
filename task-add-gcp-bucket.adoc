@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: task-add-gcp-bucket.html 
+keywords: google cloud storage buckets, google cloud storage, add buckets 
+summary: Canvas에서 Google Cloud Storage 작업 환경을 사용할 수 있게 되면 BlueXP에서 직접 추가 버킷을 추가할 수 있습니다. 
+---
+= Google Cloud Storage 버킷을 추가합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Canvas에서 Google Cloud Storage 작업 환경을 사용할 수 있게 되면 BlueXP에서 직접 추가 버킷을 추가할 수 있습니다.
+
+.단계
+. Canvas에서 Google Cloud Storage 작업 환경을 두 번 클릭하여 Google Cloud Storage 버킷 개요 페이지를 보고 * 버킷 추가 * 를 클릭합니다.
++
+image:screenshot-add-gcp-bucket-button.png["Google Cloud Storage 작업 환경 및 버킷 추가 버튼의 세부 정보를 보여주는 스크린샷"]
+
++
+버킷 추가 페이지가 표시됩니다.
+
++
+image:screenshot-add-gcp-bucket.png["고유한 Google Cloud Storage 버킷을 생성할 수 있도록 버킷 추가 페이지를 보여 주는 스크린샷"]
+
+. Project details_(프로젝트 세부 정보) 섹션에 필요한 정보를 입력합니다.
++
+[cols="25,75"]
+|===
+| 필드에 입력합니다 | 설명 
+
+
+| 버킷 이름 | 버킷에 사용할 이름을 입력합니다. https://cloud.google.com/storage/docs/buckets#naming["명명 요구 사항은 Google Cloud 설명서를 참조하십시오"^]. 
+
+
+| Google 프로젝트  a| 
+버킷의 소유자가 될 Google 프로젝트를 선택합니다. Connector가 배포된 기본 프로젝트이거나 다른 프로젝트일 수 있습니다.
+
+드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
+
+
+NOTE: BlueXP에 대해 설정한 서비스 계정입니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-google.html#set-up-permissions-for-the-connector["이 페이지에 설명되어 있습니다"^].
+
+
+
+| 라벨  a| 
+레이블은 Google Cloud 리소스의 메타데이터입니다. 버킷을 생성할 때 최대 10개의 라벨 키:값 쌍을 추가할 수 있습니다.
+
+https://cloud.google.com/compute/docs/labeling-resources["레이블에 대한 자세한 내용은 Google Cloud 설명서를 참조하십시오"^].
+
+|===
+. Location_ 섹션에서 버킷을 생성할 위치 유형 및 지역(또는 지역)을 선택합니다. 세 가지 위치 유형 중에서 선택할 수 있습니다.
++
+[cols="35,65"]
+|===
+| "위치 유형"을 선택한 경우... | 그런 다음... 
+
+
+| 지역 | "Available regions(사용 가능한 지역)" 필드의 단일 영역입니다. 
+
+
+| 이중 지역  a| 
+"사용 가능한 위치" 필드에서 지리적 위치(단일 대륙)를 선택한 다음 "사용 가능한 지역" 필드에서 두 지역을 선택합니다.
+
+15분 내에 새로 작성된 모든 객체에 대해 지리적 이중화를 보장하려는 경우 "터보 복제"를 활성화할 수 있습니다.
+
+
+
+| 다중 지역 | "사용 가능한 다중 지역" 필드의 지리적 다중 지역. 
+|===
++
+모든 클라우드 저장소 데이터는 업로드 즉시 하나 이상의 지리적 위치에 있는 두 개 이상의 영역에 걸쳐 중복됩니다. https://cloud.google.com/storage/docs/locations["버킷 위치에 대한 자세한 내용은 Google Cloud 설명서를 참조하십시오"^].
+
+. Storage class_ 섹션에서 버킷의 오브젝트에 사용할 스토리지 클래스를 선택합니다. 4개의 스토리지 클래스 중 하나를 선택하거나 _Autoclass_를 선택하여 Google에서 필요에 따라 클래스를 조정할 수 있습니다.
++
+[cols="25,75"]
+|===
+| 스토리지 클래스 | 설명 
+
+
+| 표준 | 표준 스토리지는 자주 액세스되거나("핫" 데이터) 짧은 기간 동안만 저장되는 데이터에 가장 적합합니다. 
+
+
+| 니어라인 | 니어라인 스토리지는 자주 액세스하지 않는 데이터를 저장하기 위한 저렴한 고내구성 스토리지 서비스입니다. 
+
+
+| 콜드라인 | Coldline 스토리지는 자주 액세스하지 않는 데이터를 저장하기 위한 매우 저렴하고 내구성이 뛰어난 스토리지 서비스입니다. 
+
+
+| 아카이브 | 아카이브 스토리지는 데이터 아카이브, 온라인 백업 및 재해 복구를 위한 내구성이 뛰어난 최저 수준의 스토리지 서비스입니다. 
+
+
+| 자동 클래스 | Autoclass는 각 오브젝트의 액세스 패턴에 따라 버킷의 오브젝트를 적절한 스토리지 클래스로 자동으로 전환합니다. 
+|===
++
+스토리지 클래스마다 비용과 검색 비용이 다릅니다. https://cloud.google.com/storage/docs/storage-classes["스토리지 클래스에 대한 자세한 내용은 Google Cloud 설명서를 참조하십시오"^].
+
+. Protection_ 섹션에서 데이터 보호 툴을 사용하여 버킷의 오브젝트를 보호할지 또는 데이터 암호화 구성을 사용하여 데이터에 대한 액세스를 보호할지 선택합니다.
++
+[cols="25,75"]
+|===
+| 데이터 보호 | 설명 
+
+
+| 없음 | 기본적으로 버킷에는 보호 툴이 설정되어 있지 않습니다. 
+
+
+| 오브젝트 버전 관리  a| 
+라이브 오브젝트 버전을 업데이트, 교체 또는 삭제할 때마다 버킷은 비최신 오브젝트 버전을 유지합니다. 즉, 개체의 보호된 버전을 계속 유지합니다. "개체 버전 관리"를 선택하면 다음 두 옵션을 지정할 수 있습니다.
+
+** * 최대 개체당 버전 수 * - 생성할 개체당 비현재 버전 수를 입력합니다.
+** * 다음 기간 이후 비최신 버전 만료 * - 오래된 비현재 개체가 제거된 후 남은 일 수를 입력합니다.
+
+
+
+
+| 보존 정책  a| 
+보존 정책은 버킷의 현재 및 미래 객체가 보존 정책에서 정의한 기간에 도달할 때까지 삭제하거나 교체할 수 없도록 합니다. "보존 정책"을 선택하면 다음 두 가지 옵션을 지정할 수 있습니다.
+
+** * 개체 보존 기간 * - 개체를 보존할 초, 일, 월 또는 년의 수를 입력합니다.
+** * 기간 * - 시간(초, 일, 월 또는 년)을 선택합니다.
+
+
+|===
++
+개체 버전 관리 및 보존 정책 보호 도구를 동시에 설정할 수 없습니다. 에 대한 Google Cloud 설명서를 참조하십시오 https://cloud.google.com/storage/docs/object-versioning["개체 버전 관리에 대한 자세한 정보"^], 및 https://cloud.google.com/storage/docs/bucket-lock["보존 정책에 대한 자세한 정보"^].
+
++
+[cols="25,75"]
+|===
+| 데이터 암호화 | 설명 
+
+
+| Google에서 관리하는 암호화 키입니다 | 기본적으로 Google에서 관리하는 암호화 키는 데이터를 암호화하는 데 사용됩니다. 
+
+
+| 고객 관리 암호화 키(CMEK)  a| 
+Google에서 관리하는 기본 암호화 키 대신 고객이 관리하는 데이터 암호화 키를 사용할 수 있습니다. 고객이 직접 관리하는 키를 사용하려는 경우 이 페이지에서 키를 선택할 수 있도록 키를 이미 만들어야 합니다.
+
+키는 버킷과 동일한 프로젝트에 있거나 다른 프로젝트를 선택할 수 있습니다.
+
+|===
++
+에 대한 Google Cloud 설명서를 참조하십시오 https://cloud.google.com/storage/docs/encryption/default-keys["Google에서 관리하는 암호화 키에 대한 자세한 정보"^], 및 https://cloud.google.com/storage/docs/encryption/customer-managed-keys["고객이 관리하는 암호화 키에 대한 자세한 정보"^].
+
+. 추가 * 를 클릭하면 버킷이 생성됩니다.
+

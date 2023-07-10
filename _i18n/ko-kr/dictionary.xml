@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="c12e660d4bb84d0e08246fad18777624" category="summary">BlueXP 시스템에서 Google Cloud Storage를 사용해 보십시오.</block>
+  <block id="b8a01d27e4bfb237e9b96453c804f1f3" category="doc">Google Cloud Storage 설명서</block>
+  <block id="a7d2abd2cff220a828a0ae35885677e5" category="summary">BlueXP에서 Google 클라우드 스토리지 버킷을 발견한 후 NetApp 데이터 서비스를 사용하여 백업, 계층화 및 데이터 동기화를 수행할 수 있습니다.</block>
+  <block id="fd34ce45befcc2d966ed75e41ee9ec98" category="doc">Google 클라우드 스토리지 버킷과 NetApp 데이터 서비스 사용</block>
+  <block id="4d357147ff2f971f38205a9055463501" category="list-text">BlueXP 백업 및 복구 * 를 사용하여 사내 ONTAP 및 Cloud Volumes ONTAP 시스템의 데이터를 Google Cloud 오브젝트 스토리지로 백업합니다.</block>
+  <block id="11719423e4eff4997e0776092bfabc6a" category="paragraph">시작하려면 Canvas로 이동하여 Google 클라우드 스토리지 작업 환경에서 온-프레미스 ONTAP 또는 Cloud Volumes ONTAP 작업 환경을 끌어다 놓습니다.</block>
+  <block id="c08915205c4a9681660dba7a6f50b538" category="inline-link">ONTAP 데이터를 Google 클라우드 스토리지로 백업하는 방법에 대해 자세히 알아보십시오</block>
+  <block id="522f91aee87284f45136b64ae4a7a68c" category="paragraph"><block ref="0c07e0489bbdbe9f0d75fe3c13239fe7" category="inline-link-rx"></block>.</block>
+  <block id="b99ff63fba1ab173b1d53251d0dc554c" category="list-text">BlueXP 계층화 * 를 사용하여 사내 ONTAP 클러스터에서 Google Cloud 객체 스토리지로 비활성 데이터를 계층화합니다.</block>
+  <block id="3d2df4c1f89d40eff797dc002bd23c77" category="paragraph">시작하려면 Canvas로 이동하여 온프레미스 ONTAP 작업 환경을 Google 클라우드 스토리지 작업 환경에 끌어다 놓으십시오.</block>
+  <block id="5a40e1765360a8aab7fbfc4293b302ed" category="inline-link">ONTAP 데이터를 Google 클라우드 스토리지로 계층화하는 방법에 대해 자세히 알아보십시오</block>
+  <block id="4efe552e0ff899f10ddbfa736948c07f" category="paragraph"><block ref="94b83bc0e1dc8835f1152ae8b5dd8e07" category="inline-link-rx"></block>.</block>
+  <block id="d86fd433fbfa555de30fcb2fcd883212" category="list-text">BlueXP 복사 및 동기화 * 를 사용하여 Google Cloud Storage 버킷과 데이터를 동기화할 수 있습니다.</block>
+  <block id="aed04f9f632523d0c56c7d80b9d84da2" category="paragraph">시작하려면 Canvas로 이동하여 대상 작업 환경에 소스 작업 환경을 끌어다 놓습니다. Google Cloud Storage 작업 환경은 소스 또는 타겟이 될 수 있습니다.</block>
+  <block id="835f740636293b8eadc81da766c749ca" category="paragraph">Google Cloud Storage 작업 환경을 선택하고 서비스 패널에서 * 복사 및 동기화 * 를 클릭하여 클라우드 스토리지 버킷과 데이터를 동기화할 수도 있습니다.</block>
+  <block id="f850079a6ff3f16354189a6475029756" category="inline-link">BlueXP 복사 및 동기화 서비스에 대해 자세히 알아보십시오</block>
+  <block id="f055b625ba659736f2f6aeb28ac2fd85" category="paragraph"><block ref="82a8e5397a3e5ca934b7faa7a2036870" category="inline-link-rx"></block>.</block>
+  <block id="e5f4541ccab1aa73d4b0fc6ce765ef3f" category="summary">Canvas에서 Google Cloud Storage 작업 환경을 사용할 수 있게 되면 BlueXP에서 직접 추가 버킷을 추가할 수 있습니다.</block>
+  <block id="19f54385373bc28f865c148e37d5418a" category="doc">Google Cloud Storage 버킷을 추가합니다</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
+  <block id="8bda9168c21a03f57f7928384f5d7779" category="list-text">Canvas에서 Google Cloud Storage 작업 환경을 두 번 클릭하여 Google Cloud Storage 버킷 개요 페이지를 보고 * 버킷 추가 * 를 클릭합니다.</block>
+  <block id="57943c577758f9f67d7cc38c8c975e4e" category="inline-image-macro">Google Cloud Storage 작업 환경 및 버킷 추가 버튼의 세부 정보를 보여주는 스크린샷</block>
+  <block id="a0132196ffc6735868ee90b38486276a" category="paragraph"><block ref="a0132196ffc6735868ee90b38486276a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7905235e0b9d47c87993bfcf15c3dd50" category="paragraph">버킷 추가 페이지가 표시됩니다.</block>
+  <block id="211cc72317617b0887b4b05c3dc2b824" category="inline-image-macro">고유한 Google Cloud Storage 버킷을 생성할 수 있도록 버킷 추가 페이지를 보여 주는 스크린샷</block>
+  <block id="c3916b567aad55ab0e034236b452b281" category="paragraph"><block ref="c3916b567aad55ab0e034236b452b281" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c2ed49d2a85251adbf8725c16c45ceb" category="list-text">Project details_(프로젝트 세부 정보) 섹션에 필요한 정보를 입력합니다.</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">필드에 입력합니다</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">설명</block>
+  <block id="e3cb65410aa9adfebb4eb1bc8ee22fec" category="cell">버킷 이름</block>
+  <block id="194614c2947472789a89fac4e726468f" category="inline-link">명명 요구 사항은 Google Cloud 설명서를 참조하십시오</block>
+  <block id="8714919434871e85f59d10492e5daf4f" category="cell">버킷에 사용할 이름을 입력합니다.<block ref="da6b1c222d0c064c1a3f413b6b25cbe5" category="inline-link-rx"></block>.</block>
+  <block id="7b06ebaaf67ca5b915f10d69fb4de0c7" category="cell">Google 프로젝트</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
+  <block id="e88846b46c3e6e9c74a6eaec2c3fa4e9" category="paragraph">버킷의 소유자가 될 Google 프로젝트를 선택합니다. Connector가 배포된 기본 프로젝트이거나 다른 프로젝트일 수 있습니다.</block>
+  <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.</block>
+  <block id="380bfdc134190af310ad2f9812d7569f" category="inline-link">이 페이지에 설명되어 있습니다</block>
+  <block id="4bb3e196214f97d8d3303d367946a575" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다.<block ref="14651d0d248149f0a4a9b54ce52b10db" category="inline-link-rx"></block>.</block>
+  <block id="3ad6cb6100190c8f81e99fd52debf7ef" category="cell">라벨</block>
+  <block id="5250faadf4b92670e89ea7e6cd2225fd" category="paragraph">레이블은 Google Cloud 리소스의 메타데이터입니다. 버킷을 생성할 때 최대 10개의 라벨 키:값 쌍을 추가할 수 있습니다.</block>
+  <block id="eedf77fc8235e2e5eb0da421ae8d0247" category="inline-link">레이블에 대한 자세한 내용은 Google Cloud 설명서를 참조하십시오</block>
+  <block id="8754d6ce079c505e256c14288dc582a7" category="paragraph"><block ref="0e6126ee9764c5d28fc4a15def587b1a" category="inline-link-rx"></block>.</block>
+  <block id="9ff937073a30d0158ea6edb334cda923" category="list-text">Location_ 섹션에서 버킷을 생성할 위치 유형 및 지역(또는 지역)을 선택합니다. 세 가지 위치 유형 중에서 선택할 수 있습니다.</block>
+  <block id="8af28f8050add88f47663e63eaac80fb" category="cell">"위치 유형"을 선택한 경우...</block>
+  <block id="48608c1c17bfe6c3f06fc0b6acd8f2b1" category="cell">그런 다음...</block>
+  <block id="f447ac856e7e72435904956e3b15f433" category="cell">지역</block>
+  <block id="050051186b7e5077272a4128900bbb87" category="cell">"Available regions(사용 가능한 지역)" 필드의 단일 영역입니다.</block>
+  <block id="39596571d4cbd3605dda58ae43af1ad6" category="cell">이중 지역</block>
+  <block id="62510367db3ad2deb1fb7fdf1bc760bd" category="paragraph">"사용 가능한 위치" 필드에서 지리적 위치(단일 대륙)를 선택한 다음 "사용 가능한 지역" 필드에서 두 지역을 선택합니다.</block>
+  <block id="488320291e74e62a9a9f44ac6ad381ac" category="paragraph">15분 내에 새로 작성된 모든 객체에 대해 지리적 이중화를 보장하려는 경우 "터보 복제"를 활성화할 수 있습니다.</block>
+  <block id="5c138f4c6c585c383a0333e3473c0151" category="cell">다중 지역</block>
+  <block id="d87d892388ed01d62c842ab0d4b20914" category="cell">"사용 가능한 다중 지역" 필드의 지리적 다중 지역.</block>
+  <block id="5d2b6b20c6fc689def52e67bb5d76881" category="inline-link">버킷 위치에 대한 자세한 내용은 Google Cloud 설명서를 참조하십시오</block>
+  <block id="4d7a3d667510ec48f352d3a342435207" category="paragraph">모든 클라우드 저장소 데이터는 업로드 즉시 하나 이상의 지리적 위치에 있는 두 개 이상의 영역에 걸쳐 중복됩니다.<block ref="4005711632a12fe6fcf58a90e24df63b" category="inline-link-rx"></block>.</block>
+  <block id="192f7a2361e077785db1bc709081c065" category="list-text">Storage class_ 섹션에서 버킷의 오브젝트에 사용할 스토리지 클래스를 선택합니다. 4개의 스토리지 클래스 중 하나를 선택하거나 _Autoclass_를 선택하여 Google에서 필요에 따라 클래스를 조정할 수 있습니다.</block>
+  <block id="dd8c5eff0fd4dd0b3760e41db59bfb3a" category="cell">스토리지 클래스</block>
+  <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">표준</block>
+  <block id="f3443ed16735c8ebdc0b6d39b68f5635" category="cell">표준 스토리지는 자주 액세스되거나("핫" 데이터) 짧은 기간 동안만 저장되는 데이터에 가장 적합합니다.</block>
+  <block id="aba972473e7cea22067fcd1e1e01bcd1" category="cell">니어라인</block>
+  <block id="7daeb564df724aad8ec9b70ae9bd13e8" category="cell">니어라인 스토리지는 자주 액세스하지 않는 데이터를 저장하기 위한 저렴한 고내구성 스토리지 서비스입니다.</block>
+  <block id="1d5397c0580f85c400887096d12c133e" category="cell">콜드라인</block>
+  <block id="d00fd8e51ef51887c5fefa8a6ced858a" category="cell">Coldline 스토리지는 자주 액세스하지 않는 데이터를 저장하기 위한 매우 저렴하고 내구성이 뛰어난 스토리지 서비스입니다.</block>
+  <block id="e727b00944f81e1d0a95c12886ac4641" category="cell">아카이브</block>
+  <block id="68e9ce6ad50ef37b8c8c871f8054691d" category="cell">아카이브 스토리지는 데이터 아카이브, 온라인 백업 및 재해 복구를 위한 내구성이 뛰어난 최저 수준의 스토리지 서비스입니다.</block>
+  <block id="4a5ddd6adf9bba3813e42ac13a1bdeab" category="cell">자동 클래스</block>
+  <block id="28f271b56561dd562e90391696830022" category="cell">Autoclass는 각 오브젝트의 액세스 패턴에 따라 버킷의 오브젝트를 적절한 스토리지 클래스로 자동으로 전환합니다.</block>
+  <block id="1ffab1cad4161c47ed0ef1b8b664bccd" category="inline-link">스토리지 클래스에 대한 자세한 내용은 Google Cloud 설명서를 참조하십시오</block>
+  <block id="c16686547431ba96defb7b0f07990f17" category="paragraph">스토리지 클래스마다 비용과 검색 비용이 다릅니다.<block ref="a9049d892eab54a581496747db354f33" category="inline-link-rx"></block>.</block>
+  <block id="b8f397da70b175c5a66f1bef0e198375" category="list-text">Protection_ 섹션에서 데이터 보호 툴을 사용하여 버킷의 오브젝트를 보호할지 또는 데이터 암호화 구성을 사용하여 데이터에 대한 액세스를 보호할지 선택합니다.</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="cell">데이터 보호</block>
+  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="cell">없음</block>
+  <block id="8f64edf3fd5f789c5dd5442e2c3562b4" category="cell">기본적으로 버킷에는 보호 툴이 설정되어 있지 않습니다.</block>
+  <block id="a1b7de43a5472d2ba57c5f863040eec2" category="cell">오브젝트 버전 관리</block>
+  <block id="53d77891d12005281bfb21aae2b934aa" category="paragraph">라이브 오브젝트 버전을 업데이트, 교체 또는 삭제할 때마다 버킷은 비최신 오브젝트 버전을 유지합니다. 즉, 개체의 보호된 버전을 계속 유지합니다. "개체 버전 관리"를 선택하면 다음 두 옵션을 지정할 수 있습니다.</block>
+  <block id="4664f5efbac0c00ddc9a84ac4ee37b4f" category="list-text">* 최대 개체당 버전 수 * - 생성할 개체당 비현재 버전 수를 입력합니다.</block>
+  <block id="4092e2c83312d8c50d7db8ca190293b1" category="list-text">* 다음 기간 이후 비최신 버전 만료 * - 오래된 비현재 개체가 제거된 후 남은 일 수를 입력합니다.</block>
+  <block id="00b269cfdf0eb2738ea2d7dc05573a72" category="cell">보존 정책</block>
+  <block id="1ed8c60c7dbb68f4cd7f79d6e818cd35" category="paragraph">보존 정책은 버킷의 현재 및 미래 객체가 보존 정책에서 정의한 기간에 도달할 때까지 삭제하거나 교체할 수 없도록 합니다. "보존 정책"을 선택하면 다음 두 가지 옵션을 지정할 수 있습니다.</block>
+  <block id="0dd86d86f87c4d7e5bc9b3f9ec499c69" category="list-text">* 개체 보존 기간 * - 개체를 보존할 초, 일, 월 또는 년의 수를 입력합니다.</block>
+  <block id="e98ba97e374f06c4a2176b123d2b6a51" category="list-text">* 기간 * - 시간(초, 일, 월 또는 년)을 선택합니다.</block>
+  <block id="b00f87e888861bba96aa7b0d5a5715a4" category="inline-link">개체 버전 관리에 대한 자세한 정보</block>
+  <block id="ff0c2266ee933292fe4564008ae30a52" category="inline-link">보존 정책에 대한 자세한 정보</block>
+  <block id="0b5616579f6f22614eee8d14dddb8431" category="paragraph">개체 버전 관리 및 보존 정책 보호 도구를 동시에 설정할 수 없습니다. 에 대한 Google Cloud 설명서를 참조하십시오<block ref="6c936e872cf9f9db10ad17b0ad1f1def" category="inline-link-rx"></block>, 및<block ref="95ae46b399b1a6e153ff9c25d6560bbd" category="inline-link-rx"></block>.</block>
+  <block id="78eb10228a9edc2533f7a24ab8818f4e" category="cell">데이터 암호화</block>
+  <block id="4b96b34c797e2a5470bb1256f7a6e0b3" category="cell">Google에서 관리하는 암호화 키입니다</block>
+  <block id="d9c9ee2f1e4ffb263c4bc222c124664d" category="cell">기본적으로 Google에서 관리하는 암호화 키는 데이터를 암호화하는 데 사용됩니다.</block>
+  <block id="82a42e081f1d34140d204e21a1ecac8a" category="cell">고객 관리 암호화 키(CMEK)</block>
+  <block id="b722d90bbf0498057944ac7a6cf05ded" category="paragraph">Google에서 관리하는 기본 암호화 키 대신 고객이 관리하는 데이터 암호화 키를 사용할 수 있습니다. 고객이 직접 관리하는 키를 사용하려는 경우 이 페이지에서 키를 선택할 수 있도록 키를 이미 만들어야 합니다.</block>
+  <block id="4857078b6c32702e67177b54fbfbcc6b" category="paragraph">키는 버킷과 동일한 프로젝트에 있거나 다른 프로젝트를 선택할 수 있습니다.</block>
+  <block id="7b2e299027f9ee1fde4dc8e0187b6d09" category="inline-link">Google에서 관리하는 암호화 키에 대한 자세한 정보</block>
+  <block id="9a827fef64d338d7c253c4d9091f5a17" category="inline-link">고객이 관리하는 암호화 키에 대한 자세한 정보</block>
+  <block id="132d50bb589ed611fc56705df8d56633" category="paragraph">에 대한 Google Cloud 설명서를 참조하십시오<block ref="39187e739414effbe981ed478223343d" category="inline-link-rx"></block>, 및<block ref="895220e894f0ac66488c9a432691b1a2" category="inline-link-rx"></block>.</block>
+  <block id="a213be5d3f4ac9e5115a58f090c817fa" category="list-text">추가 * 를 클릭하면 버킷이 생성됩니다.</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
+  <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP에 대한 고지 사항</block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="paragraph"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="773752fa8722d25b5cb88d771e3c6459" category="summary">Google Cloud에 Connector를 설치한 후 BlueXP는 Connector가 설치된 Google 계정에 있는 Google Cloud 버킷에 대한 정보를 자동으로 검색할 수 있습니다. Google Cloud Storage 작업 환경이 Canvas에 추가되어 이 정보를 볼 수 있습니다.</block>
+  <block id="82f74539a8232efa9fe9d44fbb820377" category="doc">Google Cloud Storage 버킷을 확인하십시오</block>
+  <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">Google Cloud에 Connector를 설치한 후 BlueXP는 Connector가 설치된 Google 계정에 있는 Google Cloud Storage 버킷에 대한 정보를 자동으로 검색할 수 있습니다. Google Cloud Storage 작업 환경이 Canvas에 추가되어 이 정보를 볼 수 있습니다.</block>
+  <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">위치, 액세스 상태, 스토리지 클래스, 총 용량 및 사용된 용량 등 Google Cloud Storage 버킷에 대한 자세한 정보를 볼 수 있습니다. 이러한 버킷은 BlueXP 백업 및 복구, BlueXP 계층화 또는 BlueXP 복사 및 동기화 작업의 대상으로 사용할 수 있습니다.</block>
+  <block id="9c626900b015a97ee8e428d66dd7d5d1" category="inline-link">커넥터를 설치합니다</block>
+  <block id="81fd1008db88c347b4d752b75921f73d" category="list-text"><block ref="60e7f14cfd631f01a983f63a8984871c" category="inline-link-rx"></block> Google Cloud Storage 버킷을 보려는 Google 계정입니다.</block>
+  <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">탐색 메뉴에서 * Storage &gt; Canvas * 를 선택합니다.</block>
+  <block id="18fe44f15840f7116c5288c8e5b736da" category="paragraph">곧 Google Cloud Storage 작업 환경이 자동으로 표시됩니다.</block>
+  <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Google Cloud Storage 작업 환경의 스크린샷</block>
+  <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f218ccab67a7b81d14ea682ff6cfab8" category="list-text">Google Cloud Storage에서 BlueXP 서비스를 활성화하려면 작업 환경을 선택하고 오른쪽 창에서 작업을 선택합니다.</block>
+  <block id="a7964f785cb1c3d3ef407dfb6e6c2f1a" category="inline-image-macro">Google Cloud Storage 작업 환경을 선택한 후 작업 창을 보여 주는 스크린샷 이 창에는 버킷의 총 수와 사용 가능한 작업이 표시됩니다.</block>
+  <block id="79a0a7879b4da6cb9acdd04c198fa749" category="paragraph"><block ref="79a0a7879b4da6cb9acdd04c198fa749" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c5b4c53d8496f5d8b5ae6d18d07f5a4b" category="inline-link-macro">사용 가능한 BlueXP 서비스를 확인하고 Google Cloud Storage 버킷과 함께 사용하는 방법을 알아보십시오</block>
+  <block id="bfd5ca47199735e9e26765632a3d3194" category="paragraph"><block ref="532094b4d2ea86cc9e6e6ba56a822070" category="inline-link-macro-rx"></block>.</block>
+  <block id="f2f1514d22abd9b7958729efc1738a1f" category="list-text">Google 계정의 버킷에 대한 세부 정보를 보려면 * 작업 환경 입력 * 을 선택하거나 작업 환경을 두 번 클릭합니다.</block>
+  <block id="b008bc9f769ee3b6c8813b19052b43a6" category="inline-image-macro">Google Cloud Storage 작업 환경의 세부 정보, 즉 총 버킷 수, 용량 및 위치, 각 버킷에 대한 세부 정보가 표시된 표를 보여주는 스크린샷</block>
+  <block id="14738180b3115b94f504ce48bf25a31a" category="paragraph"><block ref="14738180b3115b94f504ce48bf25a31a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2a915405a39225912a23c3f3e95eabe5" category="paragraph">기본적으로 표시되는 열 외에도 페이지를 스크롤하여 버킷의 추가 속성(예: 레이블 수 및 활성화된 암호화 유형)을 볼 수 있습니다.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">다음 단계</block>
+  <block id="8844ea245d7c08ab2233754002d80b15" category="inline-image-macro">세 개의 점 더 보기 단추</block>
+  <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link-macro">자세한 내용을 보려면 여기를 클릭하십시오</block>
+  <block id="7092dcb1d8885ca545ea5006a8144d68" category="paragraph">을 클릭하여 BlueXP에서 직접 일부 버킷 설정을 변경할 수 있습니다 <block ref="98246678a6b4f53f828068ceb430dd9d" category="inline-image-macro-rx" type="image"></block> 버킷을 위해. <block ref="46472ff1878a0915ac417b4b33b1fe26" category="inline-link-macro-rx"></block>.</block>
+  <block id="198cca19ca92b085c865c5298e3ad918" category="paragraph">버킷 추가 * 를 클릭하여 새 버킷을 추가할 수 있습니다. <block ref="d57c52dcffc5f4dd99aa7ac4c9f10f01" category="inline-link-macro-rx"></block>.</block>
+  <block id="69ad90c0d4fea6f18475eae78af92d31" category="summary">Canvas에서 Google Cloud Storage 작업 환경을 사용할 수 있게 되면 BlueXP에서 일부 버킷 속성을 직접 변경할 수 있습니다.</block>
+  <block id="0d3b4d3bc62973f2ef853118ee87b964" category="doc">Google Cloud Storage 버킷 설정을 변경합니다</block>
+  <block id="9547288cf6d11c5ef51962ab79d5a30e" category="paragraph">버킷 이름, Google 프로젝트 또는 보호 설정은 변경할 수 없습니다.</block>
+  <block id="c1e90160a62fa1921449efb18231f40d" category="paragraph">변경할 수 있는 버킷 속성은 다음과 같습니다.</block>
+  <block id="0aafb11c2a9f47a75e18667cde3cece4" category="list-text">버킷의 모든 향후 오브젝트에 대한 스토리지 클래스</block>
+  <block id="72bd4cff8828b9b49bc10220337d407f" category="list-text">버킷의 오브젝트에 라벨을 추가, 편집 및 제거할 수 있습니다.</block>
+  <block id="dd7724034a0925357748c9ddcf14157b" category="list-text">터보 복제 모드 - 버킷이 이중 지역 위치에 있는 경우에만 해당.</block>
+  <block id="611ccef2e610d98a73a526f57940433b" category="paragraph">을 클릭하여 BlueXP에서 직접 이러한 버킷 설정을 변경할 수 있습니다 <block ref="98246678a6b4f53f828068ceb430dd9d" category="inline-image-macro-rx" type="image"></block> &gt; * 버킷의 버킷 세부 정보 * 를 편집합니다.</block>
+  <block id="70635430b5bafdf9d4311deb47f5ed05" category="inline-image-macro">버킷 속성을 편집하기 위해 버킷 세부 정보 편집 버튼을 선택하는 방법을 보여 주는 스크린샷.</block>
+  <block id="aaa709f9b07e2de4b60aa905da9d6adb" category="paragraph"><block ref="aaa709f9b07e2de4b60aa905da9d6adb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="916e3861b96153c8e1d8fc7e7e7fa50d" category="section-title">스토리지 클래스를 변경합니다</block>
+  <block id="5900950ec7ca39afee0db6a7937f3d93" category="paragraph">스토리지 클래스 섹션에서는 특정 변경 사항만 수행할 수 있습니다.</block>
+  <block id="9d0ff57fc0479c3dc721bbe8eb604106" category="list-text">버킷이 생성될 때 _Autoclass_를 선택한 경우 Autoclass를 해제하고 다른 스토리지 클래스를 선택할 수 있습니다.</block>
+  <block id="0fff26e35bfce134ffa24b2a89404acd" category="list-text">버킷이 생성될 때 다른 스토리지 클래스를 선택한 경우 _Autoclass_를 제외한 다른 스토리지 클래스로 변경할 수 있습니다.</block>
+  <block id="b31bca7910ed7b9bac2229bc615803c4" category="paragraph">다른 클래스에 있는 개체는 해당 클래스에 유지되지만 새 개체는 새 클래스 설정을 사용합니다.</block>
+  <block id="b2dc0bd2780cad5457c930c2480da552" category="section-title">버킷의 오브젝트에 대한 라벨을 추가하거나 변경합니다</block>
+  <block id="b5f1adffd55f74c60105b86fe9d99627" category="paragraph">레이블은 리소스를 그룹화하여 애플리케이션, 환경, 지역, 클라우드 공급자 등을 식별하는 데 사용할 수 있는 메타데이터입니다. 레이블은 키와 값으로 구성됩니다. 버킷에 라벨을 추가하여 라벨이 버킷에 추가될 때 오브젝트에 적용되도록 할 수 있습니다. 레이블 및 레이블 값을 변경하거나 삭제할 수도 있습니다.</block>
+  <block id="d60c0fbf7391096036689ddd23626717" category="paragraph">레이블을 추가하거나 편집한 후 * 적용 * 을 클릭하여 변경 내용을 저장합니다. 레이블을 더 추가하려면 * 새 레이블 추가 * 를 클릭합니다. 버킷당 최대 10개의 라벨을 추가할 수 있습니다.</block>
+  <block id="949467ad042814d4c76b24fca2f4ac9b" category="section-title">이중 지역 위치에서 터보 복제를 사용할지 여부를 변경합니다</block>
+  <block id="ae7421788bf0ad960e56c7c6a19bd130" category="paragraph">버킷이 이중 지역 위치에 있는 경우 터보 복제 모드의 활성화 또는 비활성화 여부를 활성화하거나 비활성화할 수 있습니다. "터보 복제"를 사용하면 새로 작성된 모든 객체에 대해 15분 내에 지리적 이중화를 보장할 수 있습니다.</block>
+  <block id="1abde1bd568332a66f7560bab9c6abf7" category="paragraph">버킷이 생성된 후에는 다른 위치 세부 정보를 변경할 수 없습니다.</block>
+  <block id="243263104c829e77835d632f591230d5" category="summary">NetApp 기술 지원 팀과 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 BlueXP에 추가한 다음 지원 등록을 해야 합니다.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
+  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">BlueXP 계정 및 개별 Cloud Volumes ONTAP 시스템에 대한 지원 등록이 필요합니다.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">지원 권한을 활성화하려면 두 가지 형태의 등록이 있습니다.</block>
+  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">BlueXP 계정 ID 지원 가입 등록(BlueXP의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)</block>
+  <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">이는 BlueXP 내의 모든 서비스에 대한 단일 지원 가입 ID의 역할을 합니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">클라우드 공급자 마켓플레이스의 구독과 연결된 Cloud Volumes ONTAP 일련 번호 등록(20자리 909201xxxxxxxx 일련 번호)</block>
+  <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">이러한 일련 번호는 일반적으로 _PAYGO 일련 번호_라고 하며 Cloud Volumes ONTAP 배포 시 BlueXP에서 생성됩니다.</block>
+  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">두 가지 유형의 일련 번호를 등록하면 지원 티켓 열기와 자동 케이스 생성 등의 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">클라우드 공급자 솔루션 지원</block>
+  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
+  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
+  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">NetApp 지원을 위해 BlueXP 계정을 등록합니다</block>
+  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 BlueXP 계정의 한 사용자가 NetApp Support 사이트 계정을 BlueXP 로그인에 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSS 계정이 있는 기존 고객</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSS 계정을 가지고 있는 NetApp 고객은 BlueXP를 통해 지원을 받기 위해 등록하기만 하면 됩니다.</block>
+  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 자격 증명 * 을 선택합니다.</block>
+  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">사용자 자격 증명 * 을 클릭합니다.</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
+  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">등록 프로세스가 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">리소스 * 페이지에 계정이 지원을 위해 등록되었다는 내용이 표시됩니다.</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트.</block>
+  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">다른 BlueXP 사용자는 BlueXP 로그인과 NetApp Support 사이트 계정을 연결하지 않은 경우 동일한 지원 등록 상태를 볼 수 없습니다. 그러나 BlueXP 계정이 지원을 위해 등록되지 않은 것은 아닙니다. 계정에 있는 한 사용자가 이 단계를 따랐을 경우 계정이 등록되었습니다.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">기존 고객이지만 NSS 계정은 없습니다</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">기존 사용권 및 제품 번호가 _NO_NSS인 기존 NetApp 고객인 경우 NSS 계정을 만들어 BlueXP 로그인과 연결해야 합니다.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support 사이트 사용자 등록 양식</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">를 완료하여 NetApp Support 사이트 계정을 생성합니다<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">적절한 사용자 레벨(일반적으로 * NetApp 고객/최종 사용자 *)을 선택해야 합니다.</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">위에 사용된 BlueXP 계정 일련 번호(960xxxx)를 일련 번호 필드에 복사해야 합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">의 단계를 완료하여 새 NSS 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp이 처음이었습니다</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetApp의 새로운 브랜드이고 NSS 계정이 없는 경우 아래의 각 단계를 수행하십시오.</block>
+  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp의 지원 등록 사이트</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로 이동합니다<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 를 선택하고 * 등록된 NetApp 고객이 아닙니다 * 를 선택합니다.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 필드(빨간색 별표가 있는 필드)를 입력합니다.</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[제품 라인] * 필드에서 * Cloud Manager * 를 선택한 다음 해당 청구 공급자를 선택합니다.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">이 보안 트랜잭션을 완료하기 위해 제공된 사서함으로 즉시 이메일이 전송됩니다. 몇 분 내에 확인 이메일이 도착하지 않으면 스팸 폴더를 확인해야 합니다.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">이메일 내에서 작업을 확인합니다.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">확인 시 NetApp에 요청이 제출되고 NetApp Support 사이트 계정을 만들 것을 권장합니다.</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">작업을 마친 후</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp이 연락을 드릴 것입니다. 신규 사용자를 위한 일회성 온보딩 연습입니다.</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support 사이트 계정이 있으면 의 단계를 완료하여 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Cloud Volumes ONTAP 지원을 위해 NSS 자격 증명을 연결합니다</block>
+  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">Cloud Volumes ONTAP에 대해 다음 주요 워크플로를 사용하려면 NetApp Support 사이트 자격 증명을 BlueXP 계정과 연결해야 합니다.</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">지원을 위해 선불 종량제 Cloud Volumes ONTAP 시스템을 등록합니다</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">NSS 계정을 제공하면 시스템에 대한 지원을 활성화하고 NetApp 기술 지원 리소스에 액세스할 수 있습니다.</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">BYOL(Bring Your Own License) 방식으로 Cloud Volumes ONTAP 구축</block>
+  <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">BlueXP에서 사용권 키를 업로드하고 구입한 용어에 대한 구독을 활성화하려면 NSS 계정을 제공해야 합니다. 여기에는 기간 갱신을 위한 자동 업데이트가 포함됩니다.</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP 소프트웨어를 최신 릴리즈로 업그레이드하는 중입니다</block>
+  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">NSS 자격 증명을 BlueXP 계정과 연결하는 것은 BlueXP 사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
+  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP 계정 ID와 연결됩니다. BlueXP 계정에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">고객 수준 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있습니다.</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
+  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">NSS 관리 &gt; NSS 계정 추가 * 를 클릭합니다.</block>
+  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">메시지가 표시되면 * 계속 * 을 클릭하여 Microsoft 로그인 페이지로 리디렉션됩니다.</block>
+  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.</block>
+  <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">이러한 작업을 통해 BlueXP는 NSS 계정을 사용하여 라이선스 다운로드, 소프트웨어 업그레이드 확인 및 향후 지원 등록과 같은 작업을 수행할 수 있습니다.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">다음 사항에 유의하십시오.</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS 계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님). 여러 개의 고객 수준 NSS 계정을 가질 수 있습니다.</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">NSS 계정은 파트너 수준 계정인 경우 하나만 있을 수 있습니다. 고객 수준 NSS 계정을 추가하려고 하면 파트너 수준 계정이 있으면 다음 오류 메시지가 나타납니다.</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"NSS 고객 유형은 이미 다른 유형의 NSS 사용자가 있으므로 이 계정에 허용되지 않습니다."</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">기존 고객 수준 NSS 계정이 있는 경우에도 마찬가지이며 파트너 수준 계정을 추가하려고 합니다.</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">로그인에 성공하면 NetApp은 NSS 사용자 이름을 저장합니다.</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">세 개의 가로 점으로 구성된 아이콘</block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">이 ID는 이메일에 매핑되는 시스템 생성 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다. 이러한 계정의 토큰은 90일 후에 만료됩니다. 이를 알리는 알림이 게시됩니다.</block>
+  <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp은 다양한 방법으로 BlueXP를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
+  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">자체 지원 옵션을 사용합니다</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
+  <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">기술 자료</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.</block>
+  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]</block>
+  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">저희는 귀하의 의견을 소중하게 생각합니다. BlueXP 개선에 도움이 되는 피드백을 제출하십시오.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetApp Support로 케이스 생성</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">시작하기 전에</block>
+  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">BlueXP 로그인과 관련된 자격 증명을 관리하는 방법에 대해 알아봅니다</block>
+  <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">케이스 생성 * 기능을 사용하려면 먼저 NetApp Support 사이트 자격 증명을 BlueXP 로그인에 연결해야 합니다.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">일련 번호가 있는 ONTAP 시스템의 케이스를 여는 경우 NSS 계정은 해당 시스템의 일련 번호와 연결되어 있어야 합니다.</block>
+  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">BlueXP에서 * 도움말 &gt; 지원 * 을 클릭합니다.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">리소스 * 페이지의 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
+  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">전화로 통화하려면 * 전화 * 를 클릭하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">케이스 생성 * 을 클릭하여 NetApp 지원 담당자와 티켓을 엽니다.</block>
+  <block id="d63bf50426f4c712554faec55b30c548" category="list-text">* 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">* 작업 환경 *: 스토리지에 적용 가능한 경우 * Cloud Volumes ONTAP * 또는 * On-Premise * 를 선택한 다음 관련 작업 환경을 선택합니다.</block>
+  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">작업 환경 목록은 서비스의 상단 배너에서 선택한 BlueXP 계정, 작업 영역 및 커넥터의 범위 내에 있습니다.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">* 케이스 우선 순위 *: 케이스의 우선 순위를 선택합니다. 우선 순위는 낮음, 중간, 높음 또는 긴급입니다.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">이러한 우선 순위에 대한 자세한 내용을 보려면 필드 이름 옆에 있는 정보 아이콘 위로 마우스를 가져갑니다.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">* 문제 설명 * : 해당 오류 메시지 또는 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공합니다.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">* 추가 이메일 주소 *: 다른 사람에게 이 문제를 알고자 할 경우 추가 이메일 주소를 입력하십시오.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetApp Support로 케이스를 생성할 수 있는 케이스 생성 양식 스크린샷</block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">지원 케이스 번호와 함께 팝업이 나타납니다. NetApp 지원 전문가가 귀사의 사례를 검토하고 곧 다시 연결해 드릴 것입니다.</block>
+  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">지원 케이스 내역을 보려면 * 설정 &gt; 일정 * 을 클릭하고 "지원 케이스 생성"이라는 이름의 작업을 찾습니다. 오른쪽 끝에 있는 버튼을 사용하여 작업을 확장하여 세부 정보를 볼 수 있습니다.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">케이스를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"선택한 서비스에 대해 케이스를 생성할 권한이 없습니다."</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용합니다</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">에서 비기술 케이스를 제출하십시오<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">지원 사례 관리(Preview)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 있습니다. NSS 계정 및 회사와 관련된 케이스를 관리할 수 있습니다.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">케이스 관리를 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">페이지 상단의 케이스 관리 대시보드에서는 두 가지 보기를 제공합니다.</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">왼쪽 보기에는 사용자가 제공한 NSS 계정으로 지난 3개월 동안 개설된 총 케이스가 표시됩니다.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">오른쪽 보기에는 사용자 NSS 계정을 기준으로 회사 수준에서 지난 3개월 동안 개설된 총 사례가 표시됩니다.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">테이블의 결과에는 선택한 보기와 관련된 사례가 반영됩니다.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">관심 있는 열을 추가 또는 제거할 수 있으며 우선 순위 및 상태 등의 열 내용을 필터링할 수 있습니다. 다른 열은 정렬 기능만 제공합니다.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">자세한 내용은 아래 단계를 참조하십시오.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">케이스 수준별로 케이스 메모를 업데이트하거나 아직 종결 또는 미결 종결 상태가 아닌 케이스를 종결할 수 있습니다.</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Case Management * 를 클릭하고 메시지가 표시되면 NSS 계정을 BlueXP에 추가합니다.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">케이스 관리 * 페이지에는 BlueXP 사용자 계정과 연결된 NSS 계정과 관련된 미해결 케이스가 표시됩니다. NSS 관리 * 페이지 상단에 나타나는 것과 동일한 NSS 계정입니다.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">필요한 경우 테이블에 표시되는 정보를 수정합니다.</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">조직의 케이스 * 에서 * 보기 * 를 클릭하여 회사와 관련된 모든 케이스를 봅니다.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다.</block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">열의 내용을 필터링합니다.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷</block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">테이블에 나타나는 더하기 아이콘입니다</block>
+  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">을 클릭하여 테이블에 표시되는 열을 변경합니다 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 표시할 열을 선택합니다.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">표에 표시할 수 있는 열을 보여 주는 스크린샷</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 세 개의 점이 있는 아이콘</block>
+  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">를 클릭하여 기존 케이스를 관리합니다 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">* 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7cad9d2af6fc0d33e9a536e356306508" category="summary">BlueXP의 Google 클라우드 스토리지의 새로운 기능에 대해 알아보십시오.</block>
+  <block id="a1356b6085b3a47e1a2c62571f343e18" category="doc">BlueXP의 Google 클라우드 스토리지의 새로운 기능</block>
+  <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023년 7월 10일</block>
+  <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">새로운 버킷을 추가하고 BlueXP의 기존 버킷을 관리할 수 있습니다</block>
+  <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">새로운 Google Cloud Storage 버킷을 추가하는 방법을 알아보십시오</block>
+  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">BlueXP Canvas에서 Google Cloud Storage 버킷을 한동안 볼 수 있었습니다. 이제 BlueXP에서 직접 새 버킷을 추가하고 기존 버킷을 위한 속성을 변경할 수 있습니다.<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>.</block>
+  <block id="b83e711561263aa7a3404d6bb2624f6e" category="sidebar">Google Cloud Storage 문서</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
+  <block id="179541d836ec954dce16de1c1b8bcf5d" category="sidebar">Google Cloud Storage 버킷 관리</block>
+  <block id="d32273f4c8b837bea371415ed255825c" category="sidebar">새 버킷을 추가합니다</block>
+  <block id="9734d11f1da890ec7434857fd054fb47" category="sidebar">버킷 설정을 변경합니다</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
+  <block id="3d68ddcff8554ec7a179719384e80e1a" category="sidebar">버킷을 추가합니다</block>
+  <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="sidebar">추가 정보</block>
+  <block id="5cb86952e5615e9203aec4ca86b4566c" category="sidebar">BlueXP 외부에서 관리하기 위한 Google Cloud Storage 문서</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
+</blocks>

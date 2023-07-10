@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: task-gcp-enable-data-services.html 
+keywords: google buckets, google storage, google cloud storage working environment, google cloud storage buckets 
+summary: BlueXP에서 Google 클라우드 스토리지 버킷을 발견한 후 NetApp 데이터 서비스를 사용하여 백업, 계층화 및 데이터 동기화를 수행할 수 있습니다. 
+---
+= Google 클라우드 스토리지 버킷과 NetApp 데이터 서비스 사용
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP에서 Google 클라우드 스토리지 버킷을 발견한 후 NetApp 데이터 서비스를 사용하여 백업, 계층화 및 데이터 동기화를 수행할 수 있습니다.
+
+* BlueXP 백업 및 복구 * 를 사용하여 사내 ONTAP 및 Cloud Volumes ONTAP 시스템의 데이터를 Google Cloud 오브젝트 스토리지로 백업합니다.
++
+시작하려면 Canvas로 이동하여 Google 클라우드 스토리지 작업 환경에서 온-프레미스 ONTAP 또는 Cloud Volumes ONTAP 작업 환경을 끌어다 놓습니다.
+
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["ONTAP 데이터를 Google 클라우드 스토리지로 백업하는 방법에 대해 자세히 알아보십시오"^].
+
+* BlueXP 계층화 * 를 사용하여 사내 ONTAP 클러스터에서 Google Cloud 객체 스토리지로 비활성 데이터를 계층화합니다.
++
+시작하려면 Canvas로 이동하여 온프레미스 ONTAP 작업 환경을 Google 클라우드 스토리지 작업 환경에 끌어다 놓으십시오.
+
++
+https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-gcp.html["ONTAP 데이터를 Google 클라우드 스토리지로 계층화하는 방법에 대해 자세히 알아보십시오"^].
+
+* BlueXP 복사 및 동기화 * 를 사용하여 Google Cloud Storage 버킷과 데이터를 동기화할 수 있습니다.
++
+시작하려면 Canvas로 이동하여 대상 작업 환경에 소스 작업 환경을 끌어다 놓습니다. Google Cloud Storage 작업 환경은 소스 또는 타겟이 될 수 있습니다.
+
++
+Google Cloud Storage 작업 환경을 선택하고 서비스 패널에서 * 복사 및 동기화 * 를 클릭하여 클라우드 스토리지 버킷과 데이터를 동기화할 수도 있습니다.
+
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["BlueXP 복사 및 동기화 서비스에 대해 자세히 알아보십시오"^].
+
+
