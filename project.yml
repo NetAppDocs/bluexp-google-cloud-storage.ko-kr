@@ -35,32 +35,6 @@ sidebar:
       url: "/task-get-help.html"
   - title: 법적 고지
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: 시작하십시오
-    links:
-    - title: Google Cloud Storage 버킷을 확인하십시오
-      url: task-viewing-gcp-storage.html
-  - title: Google Cloud Storage 버킷 관리
-    links:
-    - title: 버킷을 추가합니다
-      url: task-add-gcp-bucket.html
-    - title: 버킷 설정을 변경합니다
-      url: task-change-gcp-bucket-settings.html
-    - title: Google 클라우드 스토리지 버킷과 NetApp 데이터 서비스 사용
-      url: task-gcp-enable-data-services.html
-  - title: 추가 정보
-    links:
-    - title: BlueXP 외부에서 관리하기 위한 Google Cloud Storage 문서
-      url: https://cloud.google.com/storage/docs/creating-buckets
-  - title: 블로그 및 커뮤니티
-    links:
-    - title: NetApp 커뮤니티
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP 블로그
-      url: https://bluexp.netapp.com/blog/topic/cloud-manager
-    - title: 클라우드 웨비나
-      url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family
