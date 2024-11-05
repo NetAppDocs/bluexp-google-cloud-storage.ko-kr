@@ -280,7 +280,6 @@
   <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023년 7월 10일</block>
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">새로운 버킷을 추가하고 BlueXP의 기존 버킷을 관리할 수 있습니다</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">새로운 Google Cloud Storage 버킷을 추가하는 방법을 알아보십시오</block>
-  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">BlueXP Canvas에서 Google Cloud Storage 버킷을 한동안 볼 수 있었습니다. 이제 BlueXP에서 직접 새 버킷을 추가하고 기존 버킷을 위한 속성을 변경할 수 있습니다.<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>.</block>
   <block id="b83e711561263aa7a3404d6bb2624f6e" category="sidebar">Google Cloud Storage 문서</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
@@ -334,4 +333,5 @@
   <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Cloud Volumes ONTAP에서 다음과 같은 주요 워크플로우를 사용하려면 NetApp 지원 사이트 자격 증명을 BlueXP  조직과 연결해야 합니다.</block>
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">NSS 자격 증명을 BlueXP  조직과 연결하는 것은 BlueXP  사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP  조직 ID와 연결됩니다. BlueXP  조직에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
+  <block id="4d1dd60706cede8204b5a6edb14f8ff5" category="paragraph">BlueXP Canvas에서 Google Cloud Storage 버킷을 한동안 볼 수 있었습니다. 이제 BlueXP 에서 직접 새 버킷을 추가하고 기존 버켓의 속성을 변경할 수 있습니다.<block ref="a727375f2b80e544cee46379a3fbce4b" category="inline-link-rx"></block>..</block>
 </blocks>
